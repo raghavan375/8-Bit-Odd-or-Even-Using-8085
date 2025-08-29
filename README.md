@@ -14,9 +14,20 @@ To write an 8085 microprocessor program to check whether a given 8-bit number is
 
 
 ## Program:
+LDA 4200H
+ΑΝΙ 01H
+JZ L1
+MVI A, 01H
+JMP L2
+L1:MVI A, 02H
+L2: STA 4201H
+HLT
 
 ## Output:
-
+ODD
+<img width="1693" height="629" alt="Screenshot 2025-08-29 154818" src="https://github.com/user-attachments/assets/f8c45086-b386-4634-9faa-706089dbfb88" />
+EVEN
+<img width="1700" height="659" alt="Screenshot 2025-08-29 154954" src="https://github.com/user-attachments/assets/0610862d-2d94-4cea-acb6-c8039f4b66f8" />
 
 ## Result:
 The 8085 microprocessor successfully checks whether a given number is odd or even and stores the result in memory.
