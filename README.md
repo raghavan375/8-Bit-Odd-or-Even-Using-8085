@@ -14,6 +14,7 @@ To write an 8085 microprocessor program to check whether a given 8-bit number is
 
 
 ## Program:
+```
 LDA 4200H
 ΑΝΙ 01H
 JZ L1
@@ -22,6 +23,7 @@ JMP L2
 L1:MVI A, 02H
 L2: STA 4201H
 HLT
+```
 
 ## Output:
 ODD
